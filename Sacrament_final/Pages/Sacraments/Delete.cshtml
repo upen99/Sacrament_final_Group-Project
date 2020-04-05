@@ -1,0 +1,70 @@
+﻿@page
+@model Sacrament_final.Pages.Sacraments.DeleteModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete</h1>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Sacrament</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Sacrament.Date)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Sacrament.Date)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Sacrament.SpeakerTopic)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Sacrament.SpeakerTopic)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Sacrament.ConductingLeader)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Sacrament.ConductingLeader)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Sacrament.OpenignSong)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Sacrament.OpenignSong)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Sacrament.OpeningPrayer)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Sacrament.OpeningPrayer)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Sacrament.Speaker)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Sacrament.Speaker)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Sacrament.IntermediateHymn)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Sacrament.IntermediateHymn)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Sacrament.ClosingPrayer)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Sacrament.ClosingPrayer)
+        </dd>
+    </dl>
+    
+    <form method="post">
+        <input type="hidden" asp-for="Sacrament.SacramentId" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-page="./Index">Back to List</a>
+    </form>
+</div>

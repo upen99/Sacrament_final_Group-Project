@@ -1,0 +1,67 @@
+﻿@page
+@model Sacrament_final.Pages.Sacraments.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Sacrament</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Sacrament.Date)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Sacrament.Date)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Sacrament.SpeakerTopic)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Sacrament.SpeakerTopic)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Sacrament.ConductingLeader)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Sacrament.ConductingLeader)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Sacrament.OpenignSong)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Sacrament.OpenignSong)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Sacrament.OpeningPrayer)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Sacrament.OpeningPrayer)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Sacrament.Speaker)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Sacrament.Speaker)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Sacrament.IntermediateHymn)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Sacrament.IntermediateHymn)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Sacrament.ClosingPrayer)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Sacrament.ClosingPrayer)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Sacrament.SacramentId">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>
